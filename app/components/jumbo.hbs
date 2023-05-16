@@ -1,0 +1,12 @@
+<div class="jumbo">
+  <div class="right tomster"></div>
+  {{yield}}
+  {{!We can enable this using the { { yield } } keyword, 
+  which will be replaced with the content that was passed to the component.}}
+</div>
+
+{{!
+Remember, when invoking components, we need to capitalize 
+their names so Ember can tell them apart from regular HTML elements.
+ The jumbo.hbs template corresponds to the <Jumbo> tag,
+just like super-awesome.hbs corresponds to <SuperAwesome>.}}

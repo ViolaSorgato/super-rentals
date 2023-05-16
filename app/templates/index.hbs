@@ -1,8 +1,18 @@
 {{!In their simplest form, Ember templates are really just HTML. 
 If you are already familiar with HTML, you should feel right at home here.}}
 
-<div class="jumbo">
-  <div class="right tomster"></div>
+<Jumbo>
+
   <h2>Welcome to Super Rentals!</h2>
   <p>We hope you find exactly what you're looking for in a place to stay.</p>
-</div>
+  <LinkTo @route="about" class="button">About Us</LinkTo>
+
+</Jumbo>
+
+{{!<LinkTo> is an example of a component in Ember—you 
+can tell them apart from regular HTML tags because they start 
+with an uppercase letter. Along with regular HTML tags, 
+components are a key building block that we can use to build
+ up an app's user interface. 
+ 
+ The AT route=... part is how we pass arguments into the component.}}
